@@ -1,0 +1,12 @@
+syntax = "proto3";
+package chancoin.chancoin;
+
+import "gogoproto/gogo.proto";
+import "chancoin/chancoin/params.proto";
+
+option go_package = "chancoin/x/chancoin/types";
+
+// GenesisState defines the chancoin module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

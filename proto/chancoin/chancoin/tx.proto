@@ -1,0 +1,7 @@
+syntax = "proto3";
+package chancoin.chancoin;
+
+option go_package = "chancoin/x/chancoin/types";
+
+// Msg defines the Msg service.
+service Msg {}
